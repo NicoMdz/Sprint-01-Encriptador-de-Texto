@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>            
+            <img src="Adjuntos/logo_alura.png" alt="Logo de la empresa" class="logo">      
+        </header>
+        
+        <main>         
+
+            <section>
+                <textarea cols="30" rows="10" placeholder="Ingrese el texto aquí" class="area-de-texto"></textarea>
+                <div>
+                    <h6 class="info">&#128712; Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea cols="20" rows="10" class="mensaje" id="inputMensaje"></textarea>
+                <div>
+                    <button class="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </section>
+                      
+        </main>
+
+        <footer>
+            <h5>Hecho por Nicolás Méndez Brito &#169;</h5>
+            <h5>Alura Challenge ✔</h5>
+        </footer>
+
+    <script src="script.js"></script>    
+
+    </body>
+</html>
